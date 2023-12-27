@@ -81,12 +81,10 @@ main {
     color: black;
 }
 .giris{
-    /* display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     align-items: center;
-    align-content: center;
-    justify-content: center; */
     margin-top: 20px;
     width: 100%;
 }
@@ -94,6 +92,10 @@ main {
 .curreny {
     width: 100%;
     max-width: 600px;
+}
+.curreny iframe {
+    width:1000px;
+    height:450px;
 }
 /* ----------------------------------------------------- */
 .headline {
