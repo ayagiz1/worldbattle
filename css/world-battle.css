@@ -80,21 +80,25 @@ main {
     width: 100%;
     color: black;
 }
-
 .giris{
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    align-content: center;
+    justify-content: center; */
     margin-top: 20px;
+    width: 100%;
 }
-.para-birimleri img{
-    max-width: 100%;
+/* ----------------------------------------------------- */
+.curreny {
+    width: 100%;
+    max-width: 600px;
 }
-
-.first-container {
-    padding-bottom: 20px;
-    padding-top: 20px;
+/* ----------------------------------------------------- */
+.headline {
+    margin-bottom: 40px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -103,19 +107,23 @@ main {
     align-items: center;
     align-content: center;
 }
-.first-container div {
-    padding-left: 20px;
-    padding-right: 20px;
+/* ----------------------------------------------------- */
+.slider {
+    padding: 0;
 }
 .slider img {
     width: 100%;
     max-width: 600px;
 }
-.curreny {
-    width: 100%;
-    max-width: 600px;
-}
 /* ----------------------------------------------------- */
+.seperator {
+    width: 125px;
+    height: 1px;
+}
+aside {
+
+}
+/* ====================================================== */
 .main-news {
     display: flex;
     flex-direction: row;
@@ -152,7 +160,7 @@ article:hover  .resim img {  /* burası üzerine article gelindiğindeki efektle
     color: white;
     box-shadow:0 0 0 4px rgba(255, 0, 0, 0.27) ;
     z-index: 1;
-    border-radius: 10px;
+    border-radius: 10px; /* --> burayı kapatırsan new etiketi keskin kenarlı olur*/
 }
 .resim {
     width: 360px; /* Hedef genişlik */
