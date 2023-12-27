@@ -9,7 +9,7 @@ body{
 }
 /* ***************************| HEADER |******************************** */
 header{ 
-    background-color: #86a789;
+    background-color: #60654a;
     margin: none;
 }
 nav {
@@ -33,22 +33,42 @@ nav ul{
     justify-content: space-evenly;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-nav ul li:hover {
-    transition: all 0.2s ease;
-    color: black;
-    transform: scale(1.1);
+nav ul li:hover,
+nav ul li:hover a {
+    transition: all 0.3s ease;
+    color: #8ea13e;
+
+    /* transform: scale(1.1); */ /* bu devre dışı ancak açılabilir --> büyüme efekti gelir*/
     /* font-weight:bolder; */
 }
 li{
     padding:0 5px 0 5px;
     margin: 2% 0 2% 0   ;
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
     transform: scale(1);
 }
 a{
     color: #ffffff;
     text-decoration: none;    
 }
+header a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 5px;
+    background-color: #8ea13e;
+    bottom: -10px;
+    left: 0;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+  }
+  header a:hover::before {
+    transform-origin: center;
+    transform: scaleX(1);
+  }
+  
 
 /* ***************************| MAİN |******************************** */
 main {
@@ -95,7 +115,7 @@ main {
     width: 100%;
     max-width: 600px;
 }
-/* -------------------- */
+/* ----------------------------------------------------- */
 .main-news {
     display: flex;
     flex-direction: row;
@@ -106,7 +126,7 @@ main {
 article {
     padding: 10px;
     width: 360px;
-    /* box-shadow: 0px 5px 22px -5px rgba(0,0,0,0.25); */  
+    /* box-shadow: 0px 5px 22px -5px rgba(0,0,0,0.25); */
 }
 article a {
     text-decoration: none;
@@ -117,8 +137,12 @@ article a {
     align-content: center;
     align-items: center;
     justify-content: center;
-} 
-.new {
+}
+article:hover  .resim img {  /* burası üzerine article gelindiğindeki efektler için*/
+    transform: scale(1.1);
+    filter: saturate(0);
+}
+.new {  /* burası new etiketi için */
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
     margin:-260px 300px 0 0 ;
@@ -127,28 +151,30 @@ article a {
     background-color: red;
     color: white;
     box-shadow:0 0 0 4px rgba(255, 0, 0, 0.27) ;
+    z-index: 1;
+    border-radius: 10px;
 }
 .resim {
     width: 360px; /* Hedef genişlik */
     height: 203px; /* Hedef yükseklik */
     overflow: hidden;
+    transform: scale(1);
+    z-index: 0;
 }
-article img {
+.resim img {
     width: 100%;
-    /* clip-path: rect(); */
-    /* aspect-ratio: 16/9; */
     height: auto;
     object-fit: cover;
+    transition: 0.4s all !important; /*bunu resme koyduk ki bıraktığımızda da zaman alsın*/
 }
 article h1 {
     padding: 3%;
-    /* yazı tipleri */
 }
 
 /* ***************************| FOOTER |******************************** */
 
 footer{
-    background-color: #221f20;
+    background-color: #2c362a;
     color: #ffffff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
