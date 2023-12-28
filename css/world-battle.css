@@ -324,24 +324,40 @@ footer a:hover {
     align-items: flex-start;
 }
 .country-news article{
-    width: 80%;
+    width: 95%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;    
     margin: 20px 20px;
 }
-.country-news a{
+.country-news article a{
+    margin: 0 0 0 10px;
     display: flex;
     flex-flow: column;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: flex-start;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.country-news div{
+.country-news{
     display: flex;
-}    
-.country-news img{
-    padding: 0 20px 0 10px;
+
 }
-/* sa */
+.country-news img{
+    margin: 0 20px 0 0;
+}
+.ana-kisim{
+    width: 70%;
+}
+.ana-kisim div{
+    display: flex;
+    flex-flow: column ;
+}
+.country-news aside{
+    display: flex;
+}
+.videos{
+    margin: 30px 0 20px 30px;
+}
