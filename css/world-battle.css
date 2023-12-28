@@ -288,7 +288,7 @@ article:hover  .resim img {  /* burası üzerine article gelindiğindeki efektle
     object-fit: cover;
     transition: 0.4s all !important; /*bunu resme koyduk ki bıraktığımızda da zaman alsın*/
 }
-article h1 {
+.main-news article h1 {
     padding: 3%;
 }
 
@@ -316,4 +316,31 @@ footer a:hover {
     justify-content: center;
     padding-top: 0 !important;
     padding: 15px;
+}
+/* ------------------------- COUNTRIES -------------------------------- */
+.countries{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.country-news article{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;    
+    margin: 20px 20px;
+}
+.country-news a{
+    display: flex;
+    flex-flow: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.country-news div{
+    display: flex;
+}    
+.country-news img{
+    padding: 0 20px 0 10px;
 }
