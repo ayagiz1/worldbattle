@@ -361,3 +361,21 @@ footer a:hover {
 .videos{
     margin: 30px 0 20px 30px;
 }
+/* =============================== NEWS PAGES ================================== */
+.newspage{
+    display: flex;
+}
+.newspage section{
+    display: flex;
+    flex-wrap: wrap;
+}
+.newspage div{
+    display: flex;
+    flex-wrap: wrap;
+}
+.icerik{
+    /* width: 80%; */
+}
+.icerik img{
+    max-width: 100%;
+}
