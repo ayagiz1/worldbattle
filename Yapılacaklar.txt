@@ -1,0 +1,5 @@
+ - Son Dakika kısmı yeniden yapılacak
+    - padding
+    - arka plan
+    
+ - Sub domainler yeniden ele alınacak
