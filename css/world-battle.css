@@ -2,14 +2,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400&display=swap');
 html {
     font-family: 'Tinos', serif;
+    height: 100%;
+    font-size: 18px;
 }
 body{
     margin: 0;
     background-color: #ffffff;
+    height: 100%;
 }
 a:hover {
     cursor: pointer;
 }
+
+/* ::-webkit-scrollbar-track
+{
+	background-color: #e1e1e1;
+}
+
+::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #e1e1e1;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #171d16;
+} */
+
 /* ***************************| HEADER |******************************** */
 header{ 
     background-color: #60654a;
@@ -81,6 +101,7 @@ main {
     align-items: center;
     align-content: center;
     width: 100%;
+    min-height: 100vh;
     color: black;
 }
 .giris{
@@ -152,7 +173,7 @@ ul::-webkit-scrollbar
 }
 ul::-webkit-scrollbar-thumb
 {
-	background-color: #000000;
+	background-color: #171d16;
 }
 /*scrollbar end*/
 aside a {
@@ -297,7 +318,12 @@ article:hover  .resim img {  /* burası üzerine article gelindiğindeki efektle
 footer{
     background-color: #2c362a;
     color: #ffffff;
-    font-family: 'Ubuntu', sans-serif;    
+    font-family: 'Ubuntu', sans-serif; 
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
 }
 footer nav ul li:hover{
     transform: scale(1) !important;
@@ -317,12 +343,17 @@ footer a:hover {
     padding-top: 0 !important;
     padding: 15px;
 }
-/* ------------------------- COUNTRIES -------------------------------- */
-.countries{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    max-width: 100%;
+/* ##################### COUNTRIES ##################### */
+.subpage-entry {
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+    background-color: #8da13eb0;
+    color: #2c362a;
+    box-shadow: #2c362a5b 0px 3px 12px;
+    margin-bottom: 1em;
 }
 .country-news article{
     width: 95%;
@@ -343,7 +374,7 @@ footer a:hover {
     justify-content: flex-start;
     align-items: flex-start;
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .country-news{
     display: flex;
@@ -399,7 +430,7 @@ footer a:hover {
     flex-direction: row;
     align-items: flex-start;
 }
-.footerpage .left-aside, section{
+.footerpage .left-aside, .footerpage section{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -429,4 +460,37 @@ footer a:hover {
 }
 .footerpage section{
     margin: 40px 0 20px 10px;
+}
+
+@media screen and (min-width: 2560px) {
+    html {
+        font-size: 36px;
+    }
+    body {
+        font-size: 18px; /* İhtiyaca göre ayarlayın */
+    }
+
+    /* Diğer stil tanımlamalarınızı da güncelleyin */
+    .curreny {
+        max-width: 1200px; /* İhtiyaca göre ayarlayın */
+    }
+
+    .curreny iframe {
+        width: 2000px;
+        height: 900px;
+    }
+
+    .slider img {
+        max-width: 1200px; /* İhtiyaca göre ayarlayın */
+    }
+
+    aside {
+        max-width: 800px; /* İhtiyaca göre ayarlayın */
+    }
+
+    .main-news article {
+        width: 720px; /* İhtiyaca göre ayarlayın */
+    }
+
+    /* Diğer özel stil tanımlamalarınızı da güncelleyin */
 }
