@@ -416,9 +416,6 @@ footer a:hover {
     display: flex;
     flex-wrap: wrap;
 }
-/* .icerik {
-    /* width: 80%; 
-} */
 .icerik img{
     max-width: 100%;
 }
@@ -467,12 +464,10 @@ footer a:hover {
         font-size: 36px;
     }
     body {
-        font-size: 18px; /* İhtiyaca göre ayarlayın */
+        font-size: 18px; 
     }
-
-    /* Diğer stil tanımlamalarınızı da güncelleyin */
     .curreny {
-        max-width: 1200px; /* İhtiyaca göre ayarlayın */
+        max-width: 1200px; 
     }
 
     .curreny iframe {
@@ -481,16 +476,14 @@ footer a:hover {
     }
 
     .slider img {
-        max-width: 1200px; /* İhtiyaca göre ayarlayın */
+        max-width: 1200px; 
     }
 
     aside {
-        max-width: 800px; /* İhtiyaca göre ayarlayın */
+        max-width: 800px; 
     }
 
     .main-news article {
-        width: 720px; /* İhtiyaca göre ayarlayın */
+        width: 720px;
     }
-
-    /* Diğer özel stil tanımlamalarınızı da güncelleyin */
 }
