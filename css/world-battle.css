@@ -322,6 +322,7 @@ footer a:hover {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    max-width: 100%;
 }
 .country-news article{
     width: 95%;
@@ -330,12 +331,15 @@ footer a:hover {
     flex-direction: column;    
     margin: 20px 20px;
 }
+.country-news article div{
+    display: flex;
+}
 .country-news article a{
     margin: 0 0 0 10px;
     display: flex;
+    flex-wrap: wrap;
     flex-flow: column;
     flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: flex-start;
     border-radius: 10px;
@@ -343,7 +347,13 @@ footer a:hover {
 }
 .country-news{
     display: flex;
-
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.country-news div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 .country-news img{
     margin: 0 20px 0 0;
@@ -354,9 +364,11 @@ footer a:hover {
 .ana-kisim div{
     display: flex;
     flex-flow: column ;
+    flex-wrap: wrap;
 }
 .country-news aside{
     display: flex;
+    flex-wrap: nowrap;
 }
 .videos{
     margin: 30px 0 20px 30px;
@@ -378,4 +390,43 @@ footer a:hover {
 } */
 .icerik img{
     max-width: 100%;
+}
+/* ---------------------------- FOOTER ITEMS PAGE ---------------------------- */
+.footerpage{
+    max-width: 98%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.footerpage .left-aside, section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-start;
+    margin: 10px 0 0 10px;
+}
+.left-aside{
+    width: 55%;
+    margin-left: 0;
+}
+.left-aside ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.left-aside a{
+    color: #000000;
+}
+.left-aside h1{
+    margin: 40px 0 40px 0;
+    padding: 10px 0 10px 0;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+}
+.footerpage section{
+    margin: 40px 0 20px 10px;
 }
