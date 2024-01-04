@@ -313,7 +313,35 @@ article:hover  .resim img {  /* burası üzerine article gelindiğindeki efektle
 .main-news article h1 {
     padding: 3%;
 }
-
+/* ---------------------------------------- */
+@media screen and (min-width: 2560px) {
+    html {
+        font-size: 36px;
+    }
+    body {
+        font-size: 18px; 
+    }
+    .curreny {
+        max-width: 1200px; 
+    }
+    
+    .curreny iframe {
+        width: 2000px;
+        height: 900px;
+    }
+    
+    .slider img {
+        max-width: 1200px; 
+    }
+    
+    aside {
+        max-width: 800px; 
+    }
+    
+    .main-news article {
+        width: 720px;
+    }
+}
 /* ***************************| FOOTER |******************************** */
 
 footer{
@@ -344,6 +372,47 @@ footer a:hover {
     padding-top: 0 !important;
     padding: 15px;
 }
+/* ---------------------------- FOOTER ITEMS PAGE ---------------------------- */
+.footerpage{
+    max-width: 98%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.footerpage .left-aside, .footerpage section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-start;
+    margin: 10px 0 0 10px;
+}
+.left-aside{
+    width: 55%;
+    margin-left: 0;
+}
+.left-aside ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.left-aside a{
+    color: #000000;
+}
+.left-aside h1{
+    margin: 40px 0 40px 0;
+    padding: 10px 0 10px 0;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.footerpage section{
+    margin: 40px 0 20px 10px;
+}
+
 /* ##################### COUNTRIES ##################### */
 .subpage-entry {
     margin: 0;
@@ -405,100 +474,7 @@ footer a:hover {
 .videos{
     margin: 30px 0 20px 30px;
 }
-/* =============================== NEWS PAGES ================================== */
-.newspage{
-    display: flex;
-}
-.newspage section{
-    display: flex;
-    flex-wrap: wrap;
-}
-.newspage section div{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-}
-.icerik img{
-    max-width: 100%;
-}
-.icerik{
-    margin: 20px 40px 2% 20px;
-    max-width: 800px;
-}
-.yazi{
-    margin-top: 2%;
-}
-/* ---------------------------- FOOTER ITEMS PAGE ---------------------------- */
-.footerpage{
-    max-width: 98%;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    align-items: flex-start;
-}
-.footerpage .left-aside, .footerpage section{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
-    align-items: flex-start;
-    margin: 10px 0 0 10px;
-}
-.left-aside{
-    width: 55%;
-    margin-left: 0;
-}
-.left-aside ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-.left-aside a{
-    color: #000000;
-}
-.left-aside h1{
-    margin: 40px 0 40px 0;
-    padding: 10px 0 10px 0;
-    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-    font-size: 2em;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-.footerpage section{
-    margin: 40px 0 20px 10px;
-}
-
-@media screen and (min-width: 2560px) {
-    html {
-        font-size: 36px;
-    }
-    body {
-        font-size: 18px; 
-    }
-    .curreny {
-        max-width: 1200px; 
-    }
-
-    .curreny iframe {
-        width: 2000px;
-        height: 900px;
-    }
-
-    .slider img {
-        max-width: 1200px; 
-    }
-
-    aside {
-        max-width: 800px; 
-    }
-
-    .main-news article {
-        width: 720px;
-    }
-}
-/* ----------------------------- STATISTICS ---------------------------- */
+/* ######################## STATISTICS ######################### */
 .simple-bar-chart{
     --line-count: 10;
     --line-color: currentcolor;
@@ -560,3 +536,44 @@ footer a:hover {
   }
   
   .statistics  > * { max-width: 45rem; margin-inline: auto}
+
+/* =============================== NEWS PAGES ================================== */
+.newspage{
+    display: flex;
+}
+.newspage section{
+    display: flex;
+    flex-wrap: wrap;
+}
+.newspage section div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.icerik img{
+    max-width: 100%;
+}
+.icerik{
+    margin: 20px 40px 2% 20px;
+    max-width: 800px;
+}
+.yazi{
+    margin-top: 2%;
+}
+.social-links{
+    margin-top: 3%;
+}
+.social-links ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.social-links ul li{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
