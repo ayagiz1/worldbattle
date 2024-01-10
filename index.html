@@ -7,6 +7,7 @@
 
     <title>World Battle</title>
     <link rel="stylesheet" href="./css/world-battle.css">
+    <script src="./javascript/world-battle.js"></script>
     <script src="https://kit.fontawesome.com/9029a05b40.js" crossorigin="anonymous"></script>
 </head>
 
@@ -28,80 +29,81 @@
         </nav>
     </header>
     
-    
-    <main>
-        <section class="giris">
-            <!-- <div class="currency">
-                
-            </div> -->
-            <section class="headline">                
-                <div class="slider">
-                    <img src="./images/sil.png" alt="$image$">
+    <main>        
+        <section class="headline">                
+            <div class="wrapper">
+                <section class="mini-container">
+                    <button class="button" style="margin-right: -50px; width: 50px; z-index: 1;" onclick="previous()"><</button>
+                    <img name="slide" alt="furniture"/>
+                    <button class="button" style="margin-left: -50px; width: 50px;" onclick="next()">></button>
+                    <!-- <div class="control-numbers">
+                        <ul>
+                            <li>1</li> <li>2</li> <li>3</li> <li>4</li> <li>5</li>
+                        </ul>
+                    </div> -->
+                </section>
+            <div>
+            <aside>
+                <div class="side-header">
+                    <span class="pulse-dot">
+                        <div class="center">
+                            <div class="circle pulse"></div>
+                        </div>
+                    </span>
+                    <h2>SON DAKİKA</h2>
                 </div>
-                <div class="seperator"></div>
-                <aside>
-                    <div class="side-header">
-                        <span class="pulse-dot">
-                            <div class="center">
-                                <div class="circle pulse"></div>
-                            </div>
-                        </span>
-                        <h2>SON DAKİKA</h2>
-                    </div>
-                    <ul>
-                        <li>
-                            <a href="newspage/news1.html">
-                                <span>17:21</span>
-                                <h1>Pakistan'da tutuklanan eski Dışişleri Bakanı Kureyşi'yi polisler yaka paça götürdü</h1>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="newspage/news1.html">
-                                <span>17:10</span>
-                                <h1>Vatan Partisi lideri Doğu Perinçek, Türkiye'nin NATO üyeliğiyle ilgili halk oylaması talep etti</h1>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="newspage/news1.html">
-                                <span>16:43</span>
-                                <h1>National Amusements müşterilerinin verilerini çaldırdı</h1>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="newspage/news1.html">
-                                <span>16:29</span>
-                                <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae est necessitatibus totam!</h1>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="newspage/news1.html">
-                                <span>16:03</span>
-                                <h1>National Amusements müşterilerinin verilerini çaldırdı</h1>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="newspage/news1.html">
-                                <span>15:10</span>
-                                <h1>National Amusements müşterilerinin verilerini çaldırdı</h1>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="newspage/news1.html">
-                                <span>14:55</span>
-                                <h1>National Amusements müşterilerinin verilerini çaldırdı</h1>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="newspage/news1.html">
-                                <span>14:21</span>
-                                <h1>National Amusements müşterilerinin verilerini çaldırdı</h1>
-                            </a>
-                        </li>
-                    </ul>
-                </aside>
-            </section>
-        </section>
-        
+                <ul>
+                    <li>
+                        <a href="newspage/news1.html">
+                            <span>17:21</span>
+                            <h1>Pakistan'da tutuklanan eski Dışişleri Bakanı Kureyşi'yi polisler yaka paça götürdü</h1>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="newspage/news1.html">
+                            <span>17:10</span>
+                            <h1>Vatan Partisi lideri Doğu Perinçek, Türkiye'nin NATO üyeliğiyle ilgili halk oylaması talep etti</h1>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="newspage/news1.html">
+                            <span>16:43</span>
+                            <h1>National Amusements müşterilerinin verilerini çaldırdı</h1>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="newspage/news1.html">
+                            <span>16:29</span>
+                            <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae est necessitatibus totam!</h1>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="newspage/news1.html">
+                            <span>16:03</span>
+                            <h1>National Amusements müşterilerinin verilerini çaldırdı</h1>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="newspage/news1.html">
+                            <span>15:10</span>
+                            <h1>National Amusements müşterilerinin verilerini çaldırdı</h1>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="newspage/news1.html">
+                            <span>14:55</span>
+                            <h1>National Amusements müşterilerinin verilerini çaldırdı</h1>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="newspage/news1.html">
+                            <span>14:21</span>
+                            <h1>National Amusements müşterilerinin verilerini çaldırdı</h1>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+        </section>        
 
         <section class="main-news">
             <article>
