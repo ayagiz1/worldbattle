@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <meta name="viewport" content="width=600, initial-scale=1.0">
-
     <title>World Battle</title>
     <link rel="stylesheet" href="./css/world-battle.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.PNG">
     <script src="./javascript/world-battle.js"></script>
     <script src="https://kit.fontawesome.com/9029a05b40.js" crossorigin="anonymous"></script>
 </head>
@@ -33,34 +33,32 @@
         <section class="headline">                
             <section class="wrapper">
                 <section class="mini-container">
-                    <button class="button" style="margin-right: -50px; width: 50px; z-index: 1;" onclick="previous()"><</button>
-                    <img name="slide" alt="furniture"/>
-                    <button class="button" style="margin-left: -50px; width: 50px;" onclick="next()">></button>
+                    <button class="button" style="margin-right: -50px;" onclick="previous()"><i class="fa-solid fa-chevron-left"></i></button>
+                    <a href="newspage/news1.html"><img name="slide" alt="image"/></a>
+                    <button class="button" style="margin-left: -50px; " onclick="next()"><i class="fa-solid fa-chevron-right"></i></button>
                 </section>
-                <section>
-                    <div class="control-numbers">
-                        <ul>
-                            <li id="first"><a onmouseover="showImage(0)" onmouseout="hideImage()">1</a></li>
-                            <li id="second"><a onmouseover="showImage(1)" onmouseout="hideImage()">2</a></li>
-                            <li id="third"><a onmouseover="showImage(2)" onmouseout="hideImage()">3</a></li>
-                            <li id="fourth"><a onmouseover="showImage(3)" onmouseout="hideImage()">4</a></li>
-                            <li id="fifth"><a onmouseover="showImage(4)" onmouseout="hideImage()">5</a></li>
-                            <li id="sixth"><a onmouseover="showImage(5)" onmouseout="hideImage()">6</a></li>
-                            <li id="seventh"><a onmouseover="showImage(6)" onmouseout="hideImage()">7</a></li>
-                            <li id="eighth"><a onmouseover="showImage(7)" onmouseout="hideImage()">8</a></li>
-                            <li id="ninth"><a onmouseover="showImage(8)" onmouseout="hideImage()">9</a></li>
-                            <li id="tenth"><a onmouseover="showImage(9)" onmouseout="hideImage()">10</a></li>
-                        </ul>
-                    </div>
-                </section>
+                <div class="control-numbers" >
+                    <ul>
+                        <li id="first"   onmouseover="showImage(0)" onmouseout="hideImage()"><a>1</a></li>
+                        <li id="second"  onmouseover="showImage(1)" onmouseout="hideImage()"><a>2</a></li>
+                        <li id="third"   onmouseover="showImage(2)" onmouseout="hideImage()"><a>3</a></li>
+                        <li id="fourth"  onmouseover="showImage(3)" onmouseout="hideImage()"><a>4</a></li>
+                        <li id="fifth"   onmouseover="showImage(4)" onmouseout="hideImage()"><a>5</a></li>
+                        <li id="sixth"   onmouseover="showImage(5)" onmouseout="hideImage()"><a>6</a></li>
+                        <li id="seventh" onmouseover="showImage(6)" onmouseout="hideImage()"><a>7</a></li>
+                        <li id="eighth"  onmouseover="showImage(7)" onmouseout="hideImage()"><a>8</a></li>
+                        <li id="ninth"   onmouseover="showImage(8)" onmouseout="hideImage()"><a>9</a></li>
+                        <li id="tenth"   onmouseover="showImage(9)" onmouseout="hideImage()"><a>10</a></li>
+                    </ul>
+                </div>
             </section>
             <aside>
                 <div class="side-header">
-                    <span class="pulse-dot">
+                    <!-- <span class="pulse-dot">
                         <div class="center">
                             <div class="circle pulse"></div>
                         </div>
-                    </span>
+                    </span> -->
                     <h2>SON DAKİKA</h2>
                 </div>
                 <ul>
