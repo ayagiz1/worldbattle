@@ -64,7 +64,7 @@ nav ul li:hover a {
     /* transform: scale(1.1); */ /* bu devre dışı ancak açılabilir --> büyüme efekti gelir*/
     /* font-weight:bolder; */
 }
-li {
+nav li {
     padding:0 5px 0 5px;
     margin: 2% 0 2% 0   ;
     transition: all 0.3s ease;
@@ -128,11 +128,10 @@ main {
     justify-items: center;
     align-items: center;
     margin: 2% 0%;
-  }
+}
 .mini-container {
     display: inherit;
     align-items: center;
-    display: flex;
 }
 .button {
   width: 96px;
@@ -150,9 +149,68 @@ main {
 .wrapper img {
   width: 700px;
   max-width: 100%;
+} 
+.control-numbers {
+    border-bottom: 2px solid #000000;
 }
-.control-numbers ul{
+#first {
+    border-left: 2px solid #000000;
+}
+#tenth {
+    border-right: 2px solid #000000;
+}
+#first:hover {
+    overflow: hidden;
+}
+#second:hover {
+    overflow: hidden;
+}
+#third:hover {
+
+}
+#fourth:hover {
+
+}
+#fifth:hover {
+
+}
+#sixth:hover {
+
+}
+#seventh:hover {
+
+}
+#eighth:hover {
+
+}
+#ninth:hover {
+
+}
+#tenth:hover {
+
+} 
+.control-numbers li {
+    border-left: 0.5px solid #000000;
+    border-right: 0.5px solid #000000;
+}
+.control-numbers ul {
     list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 1px;
+    padding: 0;
+} 
+.control-numbers li:hover {
+    background-color: rgb(235, 235, 235);
+    text-decoration: underline;
+    font-weight: 1000;
+}
+.control-numbers ul a{
+    color: black;
+    font-size: xx-large;
+    font-weight: 600;
+    padding: 0 1.65vw;
 }
 /* ----------------------------------------------------- */
 aside {

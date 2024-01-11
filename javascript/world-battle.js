@@ -1,6 +1,6 @@
 // initial declarations
 let i = 0;
-let images = ["https://picsum.photos/id/137/500/300","https://picsum.photos/id/237/500/300", "https://picsum.photos/500/300"];
+let images = ["images/card1.jpg", "images/card2.jpg", "images/card3.jpg", "images/card4.jpg", "images/card5.jpg", "images/card6.jpeg"];
 
 
 //slider functionality
