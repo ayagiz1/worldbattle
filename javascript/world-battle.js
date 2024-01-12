@@ -1,6 +1,6 @@
 // initial declarations
 let i = 0;
-let images = ["images/card1.jpg", "images/card2.jpg", "images/card3.jpg", "images/card4.jpg", "images/card5.jpg", "images/card6.jpeg"];
+let images = ["images/crsl1.jpg", "images/crsl2.jpg", "images/crsl3.jpg", "images/crsl4.jpg", "images/crsl5.jpg", "images/crsl6.jpg", "images/crsl7.jpg", "images/crsl8.jpg", "images/crsl9.jpg", "images/crsl10.jpg"];
 let activeIndex = 0;
 
 //slider functionality
@@ -39,12 +39,6 @@ function showImage(index) {
   handleChange();
 }
 
-// hide image on mouseout
-// function hideImage() {
-//   i = 0;
-//   activeIndex = i;
-//   handleChange();
-// }
 
 window.onload = handleChange;
 

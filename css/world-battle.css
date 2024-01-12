@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400&display=swap');
 html {
     font-family: 'Tinos', serif;
-    /* height: 100%; */
     font-size: 18px;
 }
 body {
@@ -61,8 +60,6 @@ nav ul li:hover a {
     transition: all 0.3s ease;
     color: #8ea13e;
 
-    /* transform: scale(1.1); */ /* bu devre dışı ancak açılabilir --> büyüme efekti gelir*/
-    /* font-weight:bolder; */
 }
 nav li {
     padding:0 5px 0 5px;
@@ -134,7 +131,6 @@ main {
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    /* margin: 2% 0%; */
     max-width: 98%;
 }
 .mini-container {
@@ -217,7 +213,7 @@ aside {
     text-align: center;
     z-index: 1;
     background-color: whitesmoke;
-    box-shadow: 0px 25px 20px -20px rgba(79, 79, 79, 0.3);
+    box-shadow: 0px 25px 20px -20px rgba(255, 0, 0, 0.26);
 } 
 /*scrollbar start*/
 ul::-webkit-scrollbar-track 
@@ -547,9 +543,6 @@ footer a:hover {
     .ana-kisim article img {
         width: 100%;
     }
-    .ana-kisim h1 {
-        
-    }
 }
 /* ######################## STATISTICS ######################### */
 .simple-bar-chart {
@@ -582,12 +575,21 @@ footer a:hover {
     box-shadow: 0 var(--line-width) 0 var(--line-color);
     opacity: var(--line-opacity);
   }
-  .simple-bar-chart > .item{
+  .simple-bar-chart > .item {
     height: calc(1% * var(--val));
     background-color: var(--clr, var(--item-default-color));
     position: relative;
     animation: item-height 1s ease forwards
   }
+.fstat > .item {
+    height: calc(2% * var(--val));
+}
+.sstat > .item {
+   height: calc(5% * var(--val));
+}
+.tstat > .item {
+    height: calc(2.5% * var(--val));
+ }
   @keyframes item-height { from { height: 0 } }
   
   .simple-bar-chart > .item > * { position: absolute; text-align: center }
